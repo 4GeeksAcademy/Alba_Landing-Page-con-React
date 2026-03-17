@@ -1,28 +1,46 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+// Importar los componentes
+import Navbar from "./Navbar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import { Card } from "./Card.jsx";
 
-//create your first component
+
 const Home = () => {
-	return (
-		<div className="text-center">
-            
+  
+  const cardsData = [
+    { title: "Card 1", text: "This is the first card", image: "https://picsum.photos/500/325?random=1" },
+    { title: "Card 2", text: "This is the second card", image: "https://picsum.photos/500/325?random=2" },
+    { title: "Card 3", text: "This is the third card", image: "https://picsum.photos/500/325?random=3" },
+    { title: "Card 4", text: "This is the fourth card", image: "https://picsum.photos/500/325?random=4" }
+  ];
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  return (
+    <>
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Jumbotron */}
+      <Jumbotron />
+
+      {/* Cards */}
+      <div className="container mt-4">
+        <div className="row">
+          {cardsData.map((card, index) => (
+            <Card
+              key={index}
+              title={card.title}
+              text={card.text}
+              image={card.image}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </>
+  );
 };
 
 export default Home;
