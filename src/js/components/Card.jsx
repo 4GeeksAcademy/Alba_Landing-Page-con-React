@@ -1,32 +1,73 @@
 import React from "react";
 
-const Card = ({ people }) => {
+//create your first component
+const Card = () => {
     return (
-        <div className="col-md-3">
-            <div className="card h-100">
+        <div className="mt-5">
+            <div className="row g-4">
 
-                {/* Imagen con URL dinámica */}
-                <img
-                    src={`https://raw.githubusercontent.com/breatheco-de/swapi-images/master/public/images/people/${people.uid}.jpg`}
-                    className="card-img-top"
-                    alt={people.name}
-                    style={{ height: "300px", objectFit: "cover" }}
-                    onError={(e) => {
-                        e.target.src = "https://via.placeholder.com/300x300?text=No+Image"; // Imagen de fallback
-                    }}
-                />
-
-                <div className="card-body">
-                    <h5 className="card-title">{people.name}</h5>
-                    <p className="card-text">
-                        Gender: {people.gender || "unknown"}
-                    </p>
+                <div className="col-md-3">
+                    <div className="card h-100">
+                        <img src="https://picsum.photos/500/325?1" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div className="card-footer text-center">
+                            <button className="btn btn-primary">Find Out More!</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="card-footer text-center">
-                    <button className="btn btn-primary">
-                        Learn more
-                    </button>
+                <div className="col-md-3">
+                    <div className="card h-100">
+                        <img src="https://picsum.photos/500/325?2" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div className="card-footer text-center">
+                            <button className="btn btn-primary">Find Out More!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-md-3">
+                    <div className="card h-100">
+                        <img src="https://picsum.photos/500/325?3" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                            </p>
+                        </div>
+                        <div className="card-footer text-center">
+                            <button className="btn btn-primary">Find Out More!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-md-3">
+                    <div className="card h-100">
+                        <img src="https://picsum.photos/500/325?4" className="card-img-top" alt="Different card" />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div className="card-footer text-center">
+                            <button className="btn btn-primary" >Find Out More!</button>
+                        </div>
+                    </div>
                 </div>
 
             </div>

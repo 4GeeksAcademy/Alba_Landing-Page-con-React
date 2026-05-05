@@ -14,34 +14,7 @@ const Jumbotron = () => {
           Cada sección está pensada para inspirarte y mostrarte algo diferente.
         </p>
 
-        {/* Imágenes generales (no relacionadas con SWAPI) */}
-        <div className="row mt-4">
-
-          <div className="col-md-4">
-            <img
-              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
-              className="img-fluid rounded"
-              alt="mountains"
-            />
-          </div>
-
-          <div className="col-md-4">
-            <img
-              src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-              className="img-fluid rounded"
-              alt="city"
-            />
-          </div>
-
-          <div className="col-md-4">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
-              className="img-fluid rounded"
-              alt="nature"
-            />
-          </div>
-
-        </div>
+        
 
         <button className="btn btn-primary btn-lg mt-4">
           Call to action!

@@ -10,7 +10,7 @@ import '../styles/index.css'
 
 // components
 import Navbar from './components/Navbar';
-import Footer from './components/FooterTest';
+import Footer from './components/Footer';
 import Jumbotron from './components/Jumbotron';
 import Card from './components/Card';
 
